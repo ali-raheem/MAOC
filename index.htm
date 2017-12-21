@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Modular Arithmatic on Circles</title>
+<script src="maoc.js"></script>
+<script>
+function callMaoc() {
+	var canvas = document.getElementById('maoc-canvas');
+	var numPoints = document.getElementById('numPoints').value;
+	var multipler = document.getElementById('multipler').value;
+	maoc(canvas, numPoints, multipler);
+}
+</script>
+</head>
+<body>
+<div>
+Number of Points <input type='text' id='numPoints'/>
+Multipler <input type='text' id='multipler'/>
+<input type='submit' onClick='callMaoc()' value='Draw'/>
+</div>
+<canvas id='maoc-canvas'></canvas>
+<body>
+<html>
