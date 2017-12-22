@@ -6,15 +6,19 @@
 function callMaoc() {
 	var canvas = document.getElementById('maoc-canvas');
 	var numPoints = document.getElementById('numPoints').value;
-	var multipler = document.getElementById('multipler').value;
-	maoc(canvas, numPoints, multipler);
+var multipler = document.getElementById('multipler').value;
+var bgcolour = document.getElementById('bgcolour').value;
+var fgcolour = document.getElementById('fgcolour').value;
+	maoc(canvas, numPoints, multipler, bgcolour, fgcolour);
 }
 </script>
 </head>
 <body>
 <div>
 Number of Points <input type='text' id='numPoints' value='400'/>
-Multipler <input type='text' id='multipler' value='2'/>
+Multipler <input type='text' id='multipler' value='2'/><br/>
+Background colour <input type='text' id='bgcolour' value='#3333cc'/>
+Foreground colour <input type='text' id='fgcolour' value='#ff66ff'/>
 <input type='submit' onClick='callMaoc()' value='Draw'/>
 </div>
 <canvas id='maoc-canvas'></canvas>

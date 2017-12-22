@@ -1,4 +1,4 @@
-function maoc(canvas, numPoints, multipler) {
+function maoc(canvas, numPoints, multipler, bgcolour='#3333cc', fgcolour='#ff66ff') {
 	ctx = canvas.getContext('2d');
 
 	width = 900;
@@ -11,14 +11,14 @@ function maoc(canvas, numPoints, multipler) {
 //	ctx.fillStyle = '#0066ff';
 //	ctx.fillRect(0, 0, width, height);
 
-	ctx.fillStyle = '#3333cc';
+	ctx.fillStyle = bgcolour;
 	drawCircle(width/2, height/2, radius, true);
 	points = getPoints(numPoints);
 
 //	ctx.fillStyle = '#aaaaaa';
 //	drawPoints(points);
 
-	ctx.strokeStyle = '#ff66ff';
+	ctx.strokeStyle = fgcolour;
 	drawLines(points, multipler);
 }
 
