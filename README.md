@@ -3,7 +3,7 @@ Modular Arithmatic on Circles
 
 Inspired by the Mathlogger video [here](https://youtu.be/qhbuKbxJsk8?t=43). This video also explains how to draw it.
 
-Demo here on [GitHub Pages](https://wolfmankurd.github.io/MAOC/).
+Demo here on [GitHub Pages](https://ali-raheem.github.io/MAOC/).
 
 Makes great avatars :)
 
